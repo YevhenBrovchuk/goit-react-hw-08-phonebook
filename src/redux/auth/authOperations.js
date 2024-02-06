@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
+// axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
+axios.baseURL = 'https://localhost:8000/';
 
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
@@ -10,11 +11,13 @@ const setAuthHeader = token => {
 const clearAuthHeader = () => {
   axios.defaults.headers.common.Authorization = '';
 };
+console.log(axios.baseURL);
+export const signup = createAsyncThunk(
+  'auth/signup',
 
-export const register = createAsyncThunk(
-  'auth/register',
   async (credentials, { rejectWithValue }) => {
     try {
+      console.log(axios.baseURL);
       const { data } = await axios.post('/users/signup', credentials);
       setAuthHeader(data.token);
       return data;

@@ -12,12 +12,12 @@ export const Hr = styled.hr`
   height: 10px;
   border: none;
   color: ${p => p.theme.colors.black};
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     90deg,
     ${p => p.theme.colors.black},
     ${p => p.theme.colors.black} 33.33%,
     transparent 33.33%,
     transparent 100%
-  );
+  ); */
   background-size: 3px 100%;
 `;

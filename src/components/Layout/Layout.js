@@ -4,6 +4,7 @@ import { Suspense } from 'react';
 import { GlobalContainer } from './Layout.styled';
 
 export const Layout = () => {
+  // console.log(bgimage);
   return (
     <GlobalContainer>
       <AppBar />
