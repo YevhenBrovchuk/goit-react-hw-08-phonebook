@@ -8,7 +8,6 @@ import { refreshUser } from 'redux/auth/authOperations';
 import { useAuth } from 'hooks/useAuth';
 import { GlobalStyle } from './GlobalStyle';
 import { Loader } from './Loader';
-
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));

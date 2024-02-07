@@ -12,6 +12,7 @@ export const Hr = styled.hr`
   height: 10px;
   border: none;
   color: ${p => p.theme.colors.black};
+
   /* background-image: linear-gradient(
     90deg,
     ${p => p.theme.colors.black},
