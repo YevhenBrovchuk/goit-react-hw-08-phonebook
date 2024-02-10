@@ -1,5 +1,3 @@
-import bagimage from '../img/imgPhoneBook.jpg';
-
 export default function Home() {
   return (
     <div
